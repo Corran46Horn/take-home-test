@@ -1,0 +1,35 @@
+@import '../../styles/global.scss';
+div{
+  .btnWrapper{
+    margin: 10px auto;
+    text-align: center;
+    height: auto;
+    @include devices(medium){
+      margin: 10px auto;
+    }
+    @include devices(large){
+      margin: 20px auto;
+    }
+    .btn{
+      padding: 20px;
+      color: #0271e1;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      &::after{
+        position: absolute;
+        content: url('../../images/chevron-down.svg');
+        bottom: 20px;
+        right: -10px;
+      }
+      &.chevron{
+        &::after{
+          position: absolute;
+          content: url('../../images/chevron.svg') !important;
+          bottom: 20px;
+          right: -10px;
+        }
+      }
+    }
+  }
+}

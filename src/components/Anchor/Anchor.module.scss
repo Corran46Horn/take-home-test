@@ -1,0 +1,32 @@
+@import '../../styles/global.scss';
+
+.tile{
+  cursor: pointer;
+  max-width: 148px;
+  height: 95px;
+  border: 1px solid #e3e5e8;
+  border-radius: 16px;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+  @include devices(medium){
+    max-width: 200px;
+    height: 95px;
+  }
+  @include devices(large){
+    max-width: 190px;
+    height: 105px;
+    margin: 0 10px 24px 10px;
+  }
+  a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  svg{
+    width: 40px;
+    height: 40px;
+  }
+}

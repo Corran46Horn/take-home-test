@@ -1,0 +1,90 @@
+/*Colors*/
+/*Classes*/
+.clearfix {
+  overflow: visible;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  line-height: 0;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 4.5625rem;
+  }
+}
+
+h2 {
+  color: #18304b;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin: 0 0 8px 0;
+}
+
+h3 {
+  color: #0271e1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+a, a:link, a:focus, a:visited {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-bottom: 16px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1vh 0 0 0;
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 10vh 0 0 0;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=global.min.css.map */

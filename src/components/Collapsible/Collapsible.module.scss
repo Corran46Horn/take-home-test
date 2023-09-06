@@ -1,0 +1,13 @@
+@import '../../styles/global.scss';
+
+.collapsed{
+  .stubborn{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;  
+    @include devices(large){
+      justify-content: flex-start; 
+    }
+  }
+}
